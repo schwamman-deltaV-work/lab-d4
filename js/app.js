@@ -16,17 +16,17 @@ runGame();
 function runGame() {
   for (questionIndex = 0; questionIndex < 5; questionIndex++) {
     if (questionIndex === 0) {
-      questionOne();
+      yesFunction();
     } else if (questionIndex === 1) {
-      questionTwo();
+      yesFunction();
     }
     else if (questionIndex === 2) {
-      questionThree();
+      noFunction();
     }
     else if (questionIndex === 3) {
-      questionFour();
+      yesFunction();
     } else {
-      questionFive();
+      noFunction();
     }
   }
   questionSix();
@@ -34,18 +34,7 @@ function runGame() {
   alert('Good game ' + userName + ', you got ' + numCorrect + ' out of 7 questions correct. Refresh to play again!');
 }
 
-function questionOne() {
-  answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-  if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-    alert(yesResponses[questionIndex]);
-    numCorrect++;
-  } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-    alert(noResponses[questionIndex]);
-  } else {
-    alert('Please enter yes or no.');
-  }
-}
-function questionTwo() {
+function yesFunction() {
   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
     alert(yesResponses[questionIndex]);
@@ -57,7 +46,7 @@ function questionTwo() {
   }
 }
 
-function questionThree() {
+function noFunction() {
   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
     alert(yesResponses[questionIndex]);
@@ -69,29 +58,64 @@ function questionThree() {
   }
 }
 
-function questionFour() {
-  answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-  if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-    alert(yesResponses[questionIndex]);
-    numCorrect++;
-  } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-    alert(noResponses[questionIndex]);
-  } else {
-    alert('Please enter yes or no.');
-  }
-}
+// function questionOne() {
+//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
+//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
+//     alert(yesResponses[questionIndex]);
+//     numCorrect++;
+//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
+//     alert(noResponses[questionIndex]);
+//   } else {
+//     alert('Please enter yes or no.');
+//   }
+// }
+// function questionTwo() {
+//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
+//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
+//     alert(yesResponses[questionIndex]);
+//     numCorrect++;
+//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
+//     alert(noResponses[questionIndex]);
+//   } else {
+//     alert('Please enter yes or no.');
+//   }
+// }
 
-function questionFive() {
-  answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-  if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-    alert(yesResponses[questionIndex]);
-  } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-    alert(noResponses[questionIndex]);
-    numCorrect++;
-  } else {
-    alert('Please enter yes or no.');
-  }
-}
+// function questionThree() {
+//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
+//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
+//     alert(yesResponses[questionIndex]);
+//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
+//     alert(noResponses[questionIndex]);
+//     numCorrect++;
+//   } else {
+//     alert('Please enter yes or no.');
+//   }
+// }
+
+// function questionFour() {
+//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
+//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
+//     alert(yesResponses[questionIndex]);
+//     numCorrect++;
+//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
+//     alert(noResponses[questionIndex]);
+//   } else {
+//     alert('Please enter yes or no.');
+//   }
+// }
+
+// function questionFive() {
+//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
+//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
+//     alert(yesResponses[questionIndex]);
+//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
+//     alert(noResponses[questionIndex]);
+//     numCorrect++;
+//   } else {
+//     alert('Please enter yes or no.');
+//   }
+// }
 
 function questionSix() {
   var randomInt = Math.floor(Math.random()*10 + 1);
