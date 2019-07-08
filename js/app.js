@@ -5,58 +5,40 @@ var sevenCorrect = false;
 
 //Creates arrays for questions 1-5
 var questionArray = ['Did I graduate college?', 'Do I have any pets?', 'Are lagers my favorite style of beer?', 'Have I always lived in Iowa?', 'Is my favorite sport soccer?'];
-var yesResponses = ['Yes, I graduated from the University of Northern Iowa in 2016.', 'Yes, I have two cats named Titan and Brownie.', 'That is incorrect, I actually prefer IPAs.', 'Yes, I have travelled outside the state but I have always lived in either Cedar Rapids or Cedar Falls.', 'Nope, my favorite sport is hockey. I\'m a Colorado Avalanche fan.'];
-var noResponses = ['That is incorrect, I graduated from the University of Northern Iowa in 2016.', 'That is incorrect, I have two cats named Titan and Brownie.', 'That is correct, I actually prefer IPAs.', 'That is incorrect, I have travelled outside the state but I have always lived in either Cedar Rapids or Cedar Falls.', 'That correct, my favorite sport is hockey. I\'m a Colorado Avalanche fan.'];
+var correctResponses = ['Yes, I graduated from the University of Northern Iowa in 2016.', 'Yes, I have two cats named Titan and Brownie.', 'That is correct, I actually prefer IPAs.', 'Yes, I have travelled outside the state but I have always lived in either Cedar Rapids or Cedar Falls.', 'Correct, my favorite sport is hockey. I\'m a Colorado Avalanche fan.'];
+var incorrectResponses = ['That is incorrect, I graduated from the University of Northern Iowa in 2016.', 'That is incorrect, I have two cats named Titan and Brownie.', 'That is incorrect, I actually prefer IPAs.', 'That is incorrect, I have travelled outside the state but I have always lived in either Cedar Rapids or Cedar Falls.', 'That incorrect, my favorite sport is hockey. I\'m a Colorado Avalanche fan.'];
 var answerArray = [];
 var questionIndex = 0;
+var correctAnswer = ['y', 'y', 'n', 'y', 'n'];
+var correctAnswerTwo = ['yes', 'yes', 'no', 'yes', 'no'];
+var incorrectAnswer = ['n', 'n', 'y', 'n', 'y'];
+var incorrectAnswerTwo = ['no', 'no', 'yes', 'no', 'yes'];
+
 
 
 runGame();
 
 function runGame() {
   for (questionIndex = 0; questionIndex < 5; questionIndex++) {
-    if (questionIndex === 0) {
-      yesFunction();
-    } else if (questionIndex === 1) {
-      yesFunction();
-    }
-    else if (questionIndex === 2) {
-      noFunction();
-    }
-    else if (questionIndex === 3) {
-      yesFunction();
-    } else {
-      noFunction();
-    }
+      askQuestion();
   }
   questionSix();
   questionSeven();
   alert('Good game ' + userName + ', you got ' + numCorrect + ' out of 7 questions correct. Refresh to play again!');
 }
 
-function yesFunction() {
+function askQuestion() {
   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-  if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-    alert(yesResponses[questionIndex]);
+  if (answerArray[questionIndex] === correctAnswer[questionIndex] || answerArray[questionIndex] === correctAnswerTwo[questionIndex]) {
+    alert(correctResponses[questionIndex]);
     numCorrect++;
-  } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-    alert(noResponses[questionIndex]);
+  } else if (answerArray[questionIndex] === incorrectAnswer[questionIndex] || answerArray[questionIndex] === incorrectAnswerTwo[questionIndex]) {
+    alert(incorrectResponses[questionIndex]);
   } else {
     alert('Please enter yes or no.');
   }
 }
 
-function noFunction() {
-  answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-  if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-    alert(yesResponses[questionIndex]);
-  } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-    alert(noResponses[questionIndex]);
-    numCorrect++;
-  } else {
-    alert('Please enter yes or no.');
-  }
-}
 
 // function questionOne() {
 //   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
