@@ -1,5 +1,6 @@
 body {
     background-color: lightgray;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #navBar {
@@ -71,9 +72,20 @@ body {
     padding: 25px;
     width: 100%;
     background-color: #EEAA7B;
-    clear: both;
     box-sizing: border-box;
     border: 10px solid lightgray;
+    float: left;
+}
+
+#favoriteMovies {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#favoriteGames {
+    width: 50%;
+    float: left;
+    text-align: center;
 }
 
 #favorites h3 {
@@ -85,6 +97,8 @@ body {
 #favorites ol {
     list-style-type: decimal;
     padding-left: 25px;
+    text-align: center;
+    list-style-position: inside;
 }
 
 footer {

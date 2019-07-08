@@ -20,7 +20,7 @@ runGame();
 
 function runGame() {
   for (questionIndex = 0; questionIndex < 5; questionIndex++) {
-      askQuestion();
+    askQuestion();
   }
   questionSix();
   questionSeven();
@@ -38,66 +38,6 @@ function askQuestion() {
     alert('Please enter yes or no.');
   }
 }
-
-
-// function questionOne() {
-//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-//     alert(yesResponses[questionIndex]);
-//     numCorrect++;
-//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-//     alert(noResponses[questionIndex]);
-//   } else {
-//     alert('Please enter yes or no.');
-//   }
-// }
-// function questionTwo() {
-//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-//     alert(yesResponses[questionIndex]);
-//     numCorrect++;
-//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-//     alert(noResponses[questionIndex]);
-//   } else {
-//     alert('Please enter yes or no.');
-//   }
-// }
-
-// function questionThree() {
-//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-//     alert(yesResponses[questionIndex]);
-//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-//     alert(noResponses[questionIndex]);
-//     numCorrect++;
-//   } else {
-//     alert('Please enter yes or no.');
-//   }
-// }
-
-// function questionFour() {
-//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-//     alert(yesResponses[questionIndex]);
-//     numCorrect++;
-//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-//     alert(noResponses[questionIndex]);
-//   } else {
-//     alert('Please enter yes or no.');
-//   }
-// }
-
-// function questionFive() {
-//   answerArray[questionIndex] = prompt(questionArray[questionIndex]).toLowerCase().trim();
-//   if (answerArray[questionIndex] === 'y' || answerArray[questionIndex] === 'yes') {
-//     alert(yesResponses[questionIndex]);
-//   } else if (answerArray[questionIndex] === 'n' || answerArray[questionIndex] === 'no') {
-//     alert(noResponses[questionIndex]);
-//     numCorrect++;
-//   } else {
-//     alert('Please enter yes or no.');
-//   }
-// }
 
 function questionSix() {
   var randomInt = Math.floor(Math.random()*10 + 1);
