@@ -1,0 +1,96 @@
+body {
+    background-color: lightgray;
+}
+
+#navBar {
+    width: auto;
+    background-color: #E37222;
+    border: 5px solid lightgray;
+    padding: 25px;
+    color: white;
+}
+
+#navBar h1 {
+    font-size: 2.0em;
+    padding: 8px;
+}
+
+#navBar h3 {
+    font-size: 1.3em;
+    padding-left: 8px;
+}
+
+#aboutMe {
+    width: 50%;
+    height: 400px;
+    background-color: gray;
+    color: white;
+    float: left;
+    box-sizing: border-box;
+    border: 10px solid lightgray;
+}
+
+#aboutMe h3 {
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#aboutMe p {
+    padding: 25px;
+}
+
+#education {
+    float: left;
+    background-color: #66B9BF;
+    height: 400px;
+    width: 50%;
+    color: white;
+    box-sizing: border-box;
+    border: 10px solid lightgray;
+}
+
+#education h3 {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#education ul {
+    padding-left: 50px;
+    list-style-type: square;
+    line-height: 1.6;
+}
+
+#favorites {
+    color: white;
+    padding: 25px;
+    width: 100%;
+    background-color: #EEAA7B;
+    clear: both;
+    box-sizing: border-box;
+    border: 10px solid lightgray;
+}
+
+#favorites h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-bottom: 5px;
+}
+
+#favorites ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+}
+
+footer {
+    clear: both;
+    padding: 30px;
+    color: white;
+    background-color: #07889B;
+    border: 5px solid lightgray;
+}
