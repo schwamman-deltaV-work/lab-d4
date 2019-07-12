@@ -4,21 +4,30 @@ body {
 }
 
 #navBar {
-    width: auto;
+    width: 100%;
+    height: 35px;
     background-color: #E37222;
     border: 5px solid lightgray;
     padding: 25px;
     color: white;
+    position: fixed;
 }
 
 #navBar h1 {
     font-size: 2.0em;
     padding: 8px;
+    float: left;
 }
 
-#navBar h3 {
-    font-size: 1.3em;
-    padding-left: 8px;
+#links ul {
+    margin-right: 5%;
+}
+#links ul li a{
+    float: right;
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 #aboutMe {
@@ -29,6 +38,8 @@ body {
     float: left;
     box-sizing: border-box;
     border: 10px solid lightgray;
+    clear: both;
+    margin-top: 90px;
 }
 
 #aboutMe h3 {
@@ -51,6 +62,7 @@ body {
     color: white;
     box-sizing: border-box;
     border: 10px solid lightgray;
+    margin-top: 90px;
 }
 
 #education h3 {
@@ -67,25 +79,32 @@ body {
     line-height: 1.6;
 }
 
+#education ul ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
 #favorites {
     color: white;
     padding: 25px;
     width: 100%;
     background-color: #EEAA7B;
     box-sizing: border-box;
-    border: 10px solid lightgray;
+    border-left: 10px solid lightgray;
+    border-right: 10px solid lightgray;
+    border-bottom: 10px solid lightgray;
     float: left;
 }
 
 #favoriteMovies {
-    width: 50%;
+    width: 35%;
     float: left;
-    text-align: center;
+    margin-left: 15%;
 }
 #favoriteGames {
-    width: 50%;
+    width: 30%;
     float: left;
-    text-align: center;
+    margin-left: 15%;
 }
 
 #favorites h3 {
@@ -97,14 +116,30 @@ body {
 #favorites ol {
     list-style-type: decimal;
     padding-left: 25px;
-    text-align: center;
     list-style-position: inside;
 }
 
 footer {
     clear: both;
     padding: 30px;
+    height: 70px;
     color: white;
     background-color: #07889B;
     border: 5px solid lightgray;
+}
+footer p {
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer ul li {
+    float: left;
+    display: block;
+    padding: 20px;
+}
+
+footer ul li a {
+    color: white;
+    
 }
